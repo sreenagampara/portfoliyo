@@ -293,10 +293,6 @@ nav a:hover::before {
 .content::-webkit-scrollbar-thumb {
     background: rgba(250, 250, 250, 0.5);
 }
-
-.slides .slide:nth-child(1) {
-  background-image: url(../img/first_bg.jpg);
-}
 .slides .slide:nth-child(2) {
   background-image: url(../img/second_bg.jpg);
 }

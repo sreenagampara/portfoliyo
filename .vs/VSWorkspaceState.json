@@ -2,9 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\myapp",
-    "\\myapp\\static",
-    "\\myapp\\static\\css"
+    "\\sreekanth",
+    "\\template"
   ],
-  "SelectedNode": "\\myapp\\static\\css\\bootstrap.css",
+  "SelectedNode": "\\myapp\\views.py",
   "PreviewInSolutionExplorer": false
 }
