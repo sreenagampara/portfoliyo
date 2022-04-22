@@ -1,8 +1,13 @@
 from django.shortcuts import render
-from .models import home
+from .models import home, about
 
 
 # Create your views here.
 def index(request):
     data = home.objects.all()
-    return render(request, 'index.html', {'datas': data})
+    about_data = about.objects.all()
+    context = {
+        'datas': data,
+        'about_datas': about_data
+    }
+    return render(request, 'index.html', context)

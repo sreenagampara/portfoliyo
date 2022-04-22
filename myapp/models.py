@@ -12,7 +12,16 @@ class home(models.Model):
 
 
 class about(models.Model):
-    author_detail = models.CharField(max_length=1000, default='Null')
+    author_detail1 = models.CharField(max_length=1000, default='Null')
+    author_detail2 = models.CharField(max_length=1000, default='Null')
+    author_detail3 = models.CharField(max_length=1000, default='Null')
+    author_detail4 = models.CharField(max_length=1000, default='Null')
+    author_detail5 = models.CharField(max_length=1000, default='Null')
+    author_detail6 = models.CharField(max_length=1000, default='Null')
+    author_detail7 = models.CharField(max_length=1000, default='Null')
+    author_detail8 = models.CharField(max_length=1000, default='Null')
+    author_detail9 = models.CharField(max_length=1000, default='Null')
+    author_detail10 = models.CharField(max_length=1000, default='Null')
     page_image = models.CharField(max_length=2000, default='Null')
     bg_image = models.CharField(max_length=2000, default='Null')
     objects = models.Manager()
