@@ -25,3 +25,19 @@ class about(models.Model):
     page_image = models.CharField(max_length=2000, default='Null', blank=True)
     bg_image = models.CharField(max_length=2000, default='Null', blank=True)
     objects = models.Manager()
+
+
+class resume(models.Model):
+    author_resume1 = models.CharField(max_length=2000, default="Null", blank=True)
+    author_resume2 = models.CharField(max_length=2000, default="Null", blank=True)
+    author_resume3 = models.CharField(max_length=2000, default="Null", blank=True)
+    bg_image = models.CharField(max_length=2000, default="Null", blank=True)
+    object = models.Manager()
+
+
+class project(models.Model):
+    project_link = models.CharField(max_length=500, default="Null", blank=True)
+    project_image = models.CharField(max_length=2000, default="Null", blank=True)
+    project_head1 = models.CharField(max_length=200, default="Null", blank=True)
+    project_head2 = models.CharField(max_length=200, default="Null", blank=True)
+    object = models.Manager()
