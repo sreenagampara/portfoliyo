@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import home, about, resume, project
+from .models import home, about, resume, project, contact, map
 
 
 class homeadmin(admin.ModelAdmin):
@@ -21,8 +21,18 @@ class projectadmin(admin.ModelAdmin):
     list_display = ('project_link', 'project_image', 'project_head1', 'project_head2')
 
 
+class contactadmin(admin.ModelAdmin):
+    list_display = ('name', 'email', 'subject', 'message')
+
+
+class mapadmin(admin.ModelAdmin):
+    list_display = ('map',)
+
+
 # Register your models here.
 admin.site.register(home, homeadmin)
 admin.site.register(about, aboutadmin)
 admin.site.register(resume, resumeadmin)
 admin.site.register(project, projectadmin)
+admin.site.register(contact, contactadmin)
+admin.site.register(map, mapadmin)

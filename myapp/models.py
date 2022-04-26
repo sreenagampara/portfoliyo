@@ -41,3 +41,16 @@ class project(models.Model):
     project_head1 = models.CharField(max_length=200, default="Null", blank=True)
     project_head2 = models.CharField(max_length=200, default="Null", blank=True)
     object = models.Manager()
+
+
+class contact(models.Model):
+    name = models.CharField(max_length=200, default="Null", blank=True)
+    email = models.CharField(max_length=200, default="Null", blank=True)
+    subject = models.CharField(max_length=200, default="Null", blank=True)
+    message = models.TextField(default="Null", blank=True)
+    object = models.Manager()
+
+
+class map(models.Model):
+    map = models.CharField(max_length=500, default="Null", blank=True)
+    object = models.Manager()
