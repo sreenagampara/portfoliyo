@@ -18,7 +18,7 @@ class resumeadmin(admin.ModelAdmin):
 
 
 class projectadmin(admin.ModelAdmin):
-    list_display = ('project_link', 'project_image', 'project_head1', 'project_head2')
+    list_display = ('project_link', 'project_image', 'project_head1', 'project_head2','bg_image')
 
 
 class contactadmin(admin.ModelAdmin):
@@ -26,7 +26,7 @@ class contactadmin(admin.ModelAdmin):
 
 
 class mapadmin(admin.ModelAdmin):
-    list_display = ('map',)
+    list_display = ('map', 'bg_image')
 
 
 # Register your models here.
