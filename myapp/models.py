@@ -27,13 +27,23 @@ class about(models.Model):
     objects = models.Manager()
 
 
-class resume(models.Model):
-    author_resume1 = models.CharField(max_length=2000, default="Null", blank=True)
-    author_resume2 = models.CharField(max_length=2000, default="Null", blank=True)
-    author_resume3 = models.CharField(max_length=2000, default="Null", blank=True)
-    bg_image = models.CharField(max_length=2000, default="Null", blank=True)
+class resume_experience(models.Model):
+    job = models.CharField(max_length=2000, default="Null", blank=True)
+    company = models.CharField(max_length=2000, default="Null", blank=True)
+    details = models.TextField(default="Null", blank=True)
+    bg_image = models.CharField(max_length=2000, default='Null')
+    from_year = models.IntegerField(default='0')
+    to_year = models.IntegerField(default='0')
     object = models.Manager()
 
+
+class resume_education(models.Model):
+    course = models.CharField(max_length=2000, default="Null", blank=True)
+    institute = models.CharField(max_length=2000, default="Null", blank=True)
+    details = models.TextField(default="Null", blank=True)
+    from_year = models.IntegerField(default='0')
+    to_year = models.IntegerField(default='0')
+    object = models.Manager()
 
 class project(models.Model):
     project_link = models.CharField(max_length=500, default="Null", blank=True)
