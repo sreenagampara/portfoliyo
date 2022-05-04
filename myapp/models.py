@@ -45,6 +45,19 @@ class resume_education(models.Model):
     to_year = models.IntegerField(default='0')
     object = models.Manager()
 
+
+class resume_skill(models.Model):
+    skill = models.CharField(max_length=200, default='Null', blank=True)
+    object = models.Manager()
+
+
+class resume_contact(models.Model):
+    symbol = models.CharField(max_length=500, default='Null', blank=True)
+    link = models.CharField(max_length=200, default='Null', blank=True)
+    detail = models.CharField(max_length=500, default='Null', blank=True)
+    object = models.Manager()
+
+
 class project(models.Model):
     project_link = models.CharField(max_length=500, default="Null", blank=True)
     project_image = models.CharField(max_length=2000, default="Null", blank=True)

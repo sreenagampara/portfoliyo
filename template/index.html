@@ -35,11 +35,9 @@
 
 <body>
     <div class="sequence">
-
         <div class="seq-preloader">
             <svg width="39" height="16" viewBox="0 0 39 16" xmlns="http://www.w3.org/2000/svg" class="seq-preload-indicator"><g fill="#F96D38"><path class="seq-preload-circle seq-preload-circle-1" d="M3.999 12.012c2.209 0 3.999-1.791 3.999-3.999s-1.79-3.999-3.999-3.999-3.999 1.791-3.999 3.999 1.79 3.999 3.999 3.999z" /><path class="seq-preload-circle seq-preload-circle-2" d="M15.996 13.468c3.018 0 5.465-2.447 5.465-5.466 0-3.018-2.447-5.465-5.465-5.465-3.019 0-5.466 2.447-5.466 5.465 0 3.019 2.447 5.466 5.466 5.466z" /><path class="seq-preload-circle seq-preload-circle-3" d="M31.322 15.334c4.049 0 7.332-3.282 7.332-7.332 0-4.049-3.282-7.332-7.332-7.332s-7.332 3.283-7.332 7.332c0 4.05 3.283 7.332 7.332 7.332z" /></g></svg>
         </div>
-
     </div>
 
 
@@ -78,8 +76,6 @@
                         {% for data in datas %}
                         <p>i am a <em>{{data.author_about}}</em> </p>
                         {% endfor %}
-                        <!--<div class="main-btn"><a href="#2">Read More</a></div>
-                        <div class="fb-btn"><a rel="nofollow" href="https://fb.com/templatemo">Our FB Page</a></div>-->
                     </div>
                 </div>
             </div>
@@ -112,7 +108,7 @@
                     <div class="col-md-6">
                         <div class="right-image">
                             {% for data in about_datas %}
-                            <img src="{{ data.page_image }} " alt="" width="490" height="650">
+                            <img src="{{ data.page_image }} " alt="" >
                             {% endfor %}
                         </div>
                     </div>
@@ -126,19 +122,19 @@
                 <div class="container-fluid">
                     <!--Resume Section Start-->
                     <section id="resume" class="resume-section pt-page">
-                    <div class="section-container" style="background-color:#000000;">
-                        <div class="page-heading">
-                            <h2>My Resume.</h2>
-                        </div>
+                        <div class="section-container" style="background-color:#000000;">
+                            <div class="page-heading">
+                                <h2>My Resume.</h2>
+                            </div>
 
-                            <!--Education & Experience Row Start-->
-                        <div class="row mb-20">
+                                <!--Education & Experience Row Start-->
+                            <div class="row mb-20">
 
-                            <!--Experience Column Start-->
-                            <div class="col-lg-6">
-                                <div class="subheading">
-                                    <h3>Experience</h3>
-                                </div>
+                                <!--Experience Column Start-->
+                                <div class="col-lg-6">
+                                    <div class="subheading">
+                                        <h3>Experience</h3>
+                                    </div>
                                     <ul class="experience">
                                         <!--Experience Item-->
                                          {% for data in resume_datas %}
@@ -158,280 +154,210 @@
                                         </li>
                                           {% endfor %}
                                     </ul>
-                        </div>
-                        <!--Experience Column End-->
-
-                        <!--Education Column Start-->
-                        <div class="col-lg-6">
-                            <div class="subheading">
-                                <h3>Education</h3>
-                            </div>
-
-                            <ul class="education">
-                                <!--Education Item-->
-                                {% for data in resume_datas1 %}
-                                <li>
-                                    <span class="line-left"></span>
-                                    <div class="content">
-                                        <h4>{{data.course}}</h4>
-                                        <h5>{{data.institute}}</h5>
-                                        <p class="info">
-                                            {{data.details}}
-                                        </p>
-                                    </div>
-                                    <span class="year">
-                                            <span class="to">{{data.to_year}}</span>
-                                    <span class="from">{{data.from_year}}</span>
-                                    </span>
-                                </li>
-                                   {% endfor %}
-                            </ul>
-                        </div>
-                        <!--Education Column End-->
-
-                    </div>
-                    <!--Education & Experience Row End-->
-
-
-                    <!--Skills Row Start-->
-                    <div class="row">
-
-                        <!--Design Skills Column Start-->
-                        <div class="col-lg-6 skills">
-                            <div class="subheading">
-                                <h3>Skills</h3>
-                            </div>
-
-                            <!--Design Skill Item-->
-                            <div class="skill-item">
-                                <h4 class="progress-title">Coral Draw</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" data-progress-value="91">
-                                        <div class="progress-value">91%</div>
-                                    </div>
                                 </div>
-                            </div>
+                                    <!--Experience Column End-->
 
-                            <div class="skill-item">
-                                <h4 class="progress-title">Coral Draw</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" data-progress-value="91">
-                                        <div class="progress-value">91%</div>
+                                    <!--Education Column Start-->
+                                <div class="col-lg-6">
+                                    <div class="subheading">
+                                        <h3>Education</h3>
                                     </div>
-                                </div>
-                            </div>
-                            <!--Design Skill Item-->
-                            <div class="skill-item">
-                                <h4 class="progress-title">Photoshop</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" data-progress-value="82">
-                                        <div class="progress-value">82%</div>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <!--Design Skill Item-->
-                            <div class="skill-item">
-                                <h4 class="progress-title">Illustrator</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" data-progress-value="94">
-                                        <div class="progress-value">94%</div>
-                                    </div>
+                                    <ul class="education">
+                                        <!--Education Item-->
+                                        {% for data in resume_datas1 %}
+                                        <li>
+                                            <span class="line-left"></span>
+                                            <div class="content">
+                                                <h4>{{data.course}}</h4>
+                                                <h5>{{data.institute}}</h5>
+                                                <p class="info">
+                                                    {{data.details}}
+                                                </p>
+                                            </div>
+                                            <span class="year">
+                                                <span class="to">{{data.to_year}}</span>
+                                                <span class="from">{{data.from_year}}</span>
+                                            </span>
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
                                 </div>
+                                 <!--Education Column End-->
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-                    <!--<div class="col-md-12">
-                        <div class="row">
-                            <div class="first-section">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            {% for data in resume_datas %}
-                                            <img src="{{data.author_resume1}}" alt="first service" >
-                                            {% endfor %}
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="right-image">
-                                                 {% for data in resume_datas %}
-                                                 <img src="{{data.author_resume2}}" alt="first service">
-                                                 {% endfor %}
+                                <!--Education & Experience Row End-->
+                                <!--Skills Row Start-->
+                            <div class="row">
+                                <!--Design Skills Column Start-->
+                                <div class="col-lg-6 skills">
+                                    <div class="subheading">
+                                        <h3>Skills</h3>
+                                    </div>
+
+                                        <!--Design Skill Item-->
+                                        {% for data in resume_skill %}
+                                    <div class="skill-item">
+                                        <h4 class="progress-title">{{data.skill}}</h4>
+                                        <div class="progress">
+                                            <div class="progress-bar">
                                             </div>
                                         </div>
                                     </div>
+                                        {% endfor %}
                                 </div>
-                            </div>
-                            <div class="second-section">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="left-image">
-                                                {% for data in resume_datas %}
-                                                <img src="{{data.author_resume3}}" alt="second service">
-                                                {% endfor %}
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                        </div>
+                                    <!--Design Skills Column End-->
+                                    <!--my contact Column Start-->
+                                <div class="col-lg-6 skills">
+                                    <div class="subheading">
+                                        <h3>Contact Me</h3>
                                     </div>
-                                </div>
-                            </div>
-                        </div>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% for data in project_datas %}
-        <div class="slide" id="4" style="background-image:url('{{data.bg_image}}');">
-        {% endfor %}
-        <div class="content fourth-content">
-            <div class="container-fluid">
-                <div class="row">
-                    {% for data in project_datas %}
-                    <div class="col-md-4 col-sm-6">
-                        <div class="item">
 
-                            <p style="font-size:15px"><a href="{{data.project_link}}" target="_blank">Click here to visit the website</a></p>
-
-                            <div class="thumb">
-
-                                <a href="{{data.project_image}}" data-lightbox="image-1">
-
-                                    <div class="hover-effect">
-                                        <div class="hover-content">
-
-                                            <h2>{{data.project_head1}}</h2>
-                                          <p>{{data.project_head2}}</p>
-
-                                        </div>
+                                        <!--my contact Item-->
+                                        {% for data in resume_contact %}
+                                    <div class="skill-item">
+                                        <img src="{{data.symbol}}" style="width:20px;height:20px;"> &nbsp;
+                                        <a href="{{data.link}}" target="_blank">{{data.detail}}</a><br><br>
                                     </div>
-                                </a>
-                                <div class="image">
-
-                                    <img src="{{data.project_image}}">
-
+                                        {% endfor %}
                                 </div>
                             </div>
-
                         </div>
-                    </div>
-                    {% endfor %}
+                    </section>
                 </div>
             </div>
         </div>
     </div>
-        {% for mymap in map %}
-    <div class="slide" id="5" style="background-image:url('{{mymap.bg_image}}');">
-        {% endfor %}
-        <div class="content fifth-content">
-            <div class="container-fluid">
-                <div class="col-md-6">
-                    <div id="map">
-
-
-                        <!-- How to change your own map point
+        {% for data in project_datas %}
+        <div class="slide" id="4" style="background-image:url('{{data.bg_image}}');">
+            {% endfor %}
+            <div class="content fourth-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        {% for data in project_datas %}
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item">
+                                <p style="font-size:15px"><a href="{{data.project_link}}" target="_blank">Click here to visit the website</a></p>
+                                <div class="thumb">
+                                    <a href="{{data.project_image}}" data-lightbox="image-1">
+                                        <div class="hover-effect">
+                                            <div class="hover-content">
+                                                <h2>{{data.project_head1}}</h2>
+                                                <p>{{data.project_head2}}</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="image">
+                                        <img src="{{data.project_image}}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+            {% for mymap in map %}
+        <div class="slide" id="5" style="background-image:url('{{mymap.bg_image}}');">
+            {% endfor %}
+            <div class="content fifth-content">
+                <div class="container-fluid">
+                    <div class="col-md-6">
+                        <div id="map">
+                            <!-- How to change your own map point
                                 1. Go to Google Maps
                                 2. Click on your location point
                                 3. Click "Share" and choose "Embed map" tab
-                                4. Copy only URL and paste it within the src="" field below
-                        -->
-
-                               {% for mymap in map %}
-                                <iframe src="{{mymap.map}}" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
-                                {% endfor %}
-                            </div>
+                                4. Copy only URL and paste it within the src="" field below-->
+                            {% for mymap in map %}
+                            <iframe src="{{mymap.map}}" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            {% endfor %}
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <form id="contact" action="" method="POST">{% csrf_token %}
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <fieldset>
-                                        <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
-                                    </fieldset>
+                        <div class="col-md-6">
+                            <form id="contact" action="" method="POST">{% csrf_token %}
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <fieldset>
+                                            <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <fieldset>
+                                            <input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required="">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <fieldset>
+                                            <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject..." required="">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <fieldset>
+                                            <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <fieldset>
+                                            <button type="submit" id="form-submit" class="btn">Send Now</button>
+                                        </fieldset>
+                                    </div>
                                 </div>
-                                <div class="col-md-12">
-                                    <fieldset>
-                                        <input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required="">
-                                    </fieldset>
-                                </div>
-                                <div class="col-md-12">
-                                    <fieldset>
-                                        <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject..." required="">
-                                    </fieldset>
-                                </div>
-                                <div class="col-md-12">
-                                    <fieldset>
-                                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
-                                    </fieldset>
-                                </div>
-                                <div class="col-md-12">
-                                    <fieldset>
-                                        <button type="submit" id="form-submit" class="btn">Send Now</button>
-                                    </fieldset>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                            </form>
+                        </div>
                 </div>
             </div>
         </div>
-    </div>
-
     <div class="footer">
         <div class="content">
             <!--<p>Copyright &copy; 2020 Company Name . Template: <a rel="nofollow" href="https://templatemo.com/tm-512-moonlight">Moonlight</a></p>-->
         </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
-    <script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
-
-    <script src="{% static 'js/datepicker.js' %}"></script>
-    <script src="{% static 'js/plugins.js' %}"></script>
-    <script src="{% static 'js/main.js' %}"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/datepicker.js' %}"></script>
+        <script src="{% static 'js/plugins.js' %}"></script>
+        <script src="{% static 'js/main.js' %}"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
 
 
 
-            // navigation click actions
-            $('.scroll-link').on('click', function (event) {
-                event.preventDefault();
-                var sectionID = $(this).attr("data-id");
-                scrollToID('#' + sectionID, 750);
+                // navigation click actions
+                $('.scroll-link').on('click', function (event) {
+                    event.preventDefault();
+                    var sectionID = $(this).attr("data-id");
+                    scrollToID('#' + sectionID, 750);
+                });
+                // scroll to top action
+                $('.scroll-top').on('click', function (event) {
+                    event.preventDefault();
+                    $('html, body').animate({ scrollTop: 0 }, 'slow');
+                });
+                // mobile nav toggle
+                $('#nav-toggle').on('click', function (event) {
+                    event.preventDefault();
+                    $('#main-nav').toggleClass("open");
+                });
             });
-            // scroll to top action
-            $('.scroll-top').on('click', function (event) {
-                event.preventDefault();
-                $('html, body').animate({ scrollTop: 0 }, 'slow');
-            });
-            // mobile nav toggle
-            $('#nav-toggle').on('click', function (event) {
-                event.preventDefault();
-                $('#main-nav').toggleClass("open");
-            });
-        });
-        // scroll function
-        function scrollToID(id, speed) {
-            var offSet = 0;
-            var targetOffset = $(id).offset().top - offSet;
-            var mainNav = $('#main-nav');
-            $('html,body').animate({ scrollTop: targetOffset }, speed);
-            if (mainNav.hasClass("open")) {
-                mainNav.css("height", "1px").removeClass("in").addClass("collapse");
-                mainNav.removeClass("open");
+            // scroll function
+                function scrollToID(id, speed) {
+                var offSet = 0;
+                var targetOffset = $(id).offset().top - offSet;
+                var mainNav = $('#main-nav');
+                $('html,body').animate({ scrollTop: targetOffset }, speed);
+                if (mainNav.hasClass("open")) {
+                    mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+                    mainNav.removeClass("open");
+                }
             }
-        }
-        if (typeof console === "undefined") {
-            console = {
-                log: function () { }
-            };
-        }
-    </script>
+            if (typeof console === "undefined") {
+                console = {
+                    log: function () { }
+                };
+            }
+        </script>
 </body>
 </html>

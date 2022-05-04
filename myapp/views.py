@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.conf import settings
 from django.core.mail import send_mail
-from .models import home, about, resume_experience, project, map, contact, resume_education
+from .models import home, about, resume_experience, project, map, contact, resume_education, resume_contact, resume_skill
 
 
 # Create your views here.
@@ -12,13 +12,18 @@ def index(request):
     project_data = project.object.all()
     mymap = map.object.all()
     resume_data1 = resume_education.object.all()
+    resume_skills = resume_skill.object.all()
+    resume_contacts = resume_contact.object.all()
+
     context = {
         'datas': data,
         'about_datas': about_data,
         'resume_datas': resume_data,
         'project_datas': project_data,
         'map': mymap,
-        'resume_datas1': resume_data1
+        'resume_datas1': resume_data1,
+        'resume_skill': resume_skills,
+        'resume_contact': resume_contacts
     }
     if request.method == 'POST':
         name = request.POST.get('name')
